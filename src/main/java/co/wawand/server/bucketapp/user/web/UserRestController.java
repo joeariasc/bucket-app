@@ -39,7 +39,7 @@ public class UserRestController {
 
         String keyName = userService.generateUser(name, file);
         if (keyName != null) {
-            return keyName;
+            return "User profile id: " + keyName;
         } else return "Failed to upload file";
     }
 
